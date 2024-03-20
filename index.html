@@ -1,7 +1,6 @@
 <html>
     <head>
          <link rel="stylesheet" href="style.css">
-         <script src="script.js"></script>
          <title>Экономия электроэнергии</title>
     </head>
     <body>
@@ -70,11 +69,70 @@
                <p>Советы по <b>экономии</b><br> электроэнергии</p>
           </div>
           <div class="con1">
-               <div class="container1">
-                    <img src="img/con1.png">
+               <div class="conte">
+                    <p class="cifr" style="color: aqua;">01</p>
+                    <p class="zag">Используйте энергоэффективные лампы</p>
+                    <p class="inf">Замените обычные лампочки на светодиодные, они потребляют гораздо меньше<br> энергии и имеют более длительный срок службы</p>
                </div>
-               <div class="container2">
-                    <img src="img/con2.png">
+               <div class="conim">
+                    <img src="img/block_01_lamp.jpg">
+               </div>
+          </div>
+          <div class="con1">
+               <div class="conte">
+                    <p class="cifr" style="color: indigo;">02</p>
+                    <p class="zag">Выключайте свет и электроприборы</p>
+                    <p class="inf">Выключать свет и электроприборы, когда они не используются, или когда<br> 
+                         покидаешь комнату, и отключать электроприборы, такие как телевизоры,<br>
+                          компьютеры и зарядные устройства, когда они не нужны.</p>
+               </div>
+               <div class="conim">
+                    <img src="img/block_02_off.jpg">
+               </div>
+          </div>
+          <div class="con1">
+               <div class="conte">
+                    <p class="cifr" style="color: lightpink;">03</p>
+                    <p class="zag">Используйте энергоэффективные бытовые приборы</p>
+                    <p class="inf">При покупке новых приборов обращать внимание на их энергетическую эффективность.<br>
+                          Выбирать приборы с высоким классом<br> энергопотребления (например, класс А++ или А+++),
+                           которые потребляют меньше энергии.<br><br>
+                         Приборы класса А+++ обычно стоят дороже, чем приборы класса А++.<br>
+                          Однако разница в цене может окупиться за счет экономии энергии в долгосрочной перспективе,<br>
+                           ведь приборы класса А+++ потребляют на 10-20% меньше энергии, чем приборы класса А++.</p>
+               </div>
+               <div class="conim">
+                    <img src="img/block_03_a+.jpg">
+               </div>
+          </div>
+          <div class="con1">
+               <div class="conte">
+                    <p class="cifr" style="color: aqua;">04</p>
+                    <p class="zag">Поставьте солнечные панели</p>
+                    <p class="inf">Рассмотреть возможность установки солнечных панелей на крыше дома.<br>
+                          Они позволят генерировать собственную электроэнергию и снизить зависимость от сети.<br>
+                           Это приводит к снижению ежемесячных счетов за электроэнергию,<br>
+                            особенно в дневное время, когда солнечная энергия наиболее доступна.<br><br>
+                         Особенно полезны солнечные панели во время перебоев в подаче электроэнергии<br>
+                          или в районах с ненадежным электроснабжением. Они также могут повысить<br>
+                           стоимость недвижимости, поскольку они повышают энергоэффективность и привлекательность<br>
+                            для потенциальных покупателей.<br> <br>
+                         Однако, стоимость установки солнечных панелей может быть высокой<br>
+                          и для получения электроэнергии ночью необходимо купить аккумулятор, в который днем<br>
+                           будет запитываться энергия, а ночью он будет снабжать дом энергией.</p>
+               </div>
+               <div class="conim">
+                    <img src="img/block_04_battary.jpg">
+               </div>
+          </div>
+          <div class="con1">
+               <div class="conte">
+                    <p class="cifr" style="color: indigo;">05</p>
+                    <p class="zag">Проверяйте и регулярно обслуживайте системы отопления<br> и кондиционирования воздуха</p>
+                    <p class="inf">Чистые и хорошо обслуживаемые системы потребляют меньше энергии</p>
+               </div>
+               <div class="conim">
+                    <img src="img/block_05_warm.jpg">
                </div>
           </div>
           <div id="so" class="soo">
@@ -99,35 +157,44 @@
           </div>
          <div class="calc" id="calculator">
                <h1>Калькулятор стоимости использования электроприбора</h1>
-               <div class="calc12">
-                    <div class="calc1">
-                    <label for="consumption">Потребление электроэнергии прибором (в кВт/ч):</label>
+               <script src="script1.js"></script>
+               <div class="vcalc">
+               <div class="s1calc">
+                    <label for="consumption">Потребление электроэнергии(кВтч):</label>
+                    <br>
                     <input type="number" id="consumption">
-                    <label for="dayRate"><br>Дневной тариф оплаты (руб/кВт/ч):</label>
-                    <input type="number" id="dayRate">
-                    <label for="usageTime"><br>Время использования прибора (в часах):</label>
-                    <input type="number" id="usageTime">
-                    </div>
-                    <div class="calc2">
-                    <label for="tariffType">Тариф:</label>
+                    <br>
+                    <label for="hours">Время использования:</label>
+                    <br>
+                    <input type="number" id="hours">
+                    <br>
+                    <label for="tariffType">Тип тарифа:</label>
+                    <br>
                     <select id="tariffType">
-                        <option value="day">Дневной</option>
-                        <option value="night">Ночной</option>
+                      <option value="day">Дневной</option>
+                      <option value="night">Ночной</option>
                     </select>
-               
-
-               
-                    <label for="nightRate">Ночной тариф оплаты (руб/кВт/ч):</label>
-                    <input type="number" id="nightRate">
-               
-
-               
-                    <button onclick="calculateCost()">Рассчитать стоимость</button>
-
-                    
+                    <br>
                </div>
+               <div class="s2calc">
+                    <label for="dayTariff">Дневной тариф:</label>
+                    <br>
+                    <input type="number" id="dayTariff">
+                    <br>
+                    <label for="nightTariff">Ночной тариф:</label>
+                    <br>
+                    <input type="number" id="nightTariff">
+                    <br>
+                    <div class="res">
+                         <div>
+                              <button onclick="calculateCost()">Рассчитать</button>
+                         </div>
+                         <div>
+                              <p id="result">1</p>
+                         </div>
+                    </div>
                </div>
-               <p class="result">Результат</p>
+          </div>
          </div>
          </main>
     </body>
