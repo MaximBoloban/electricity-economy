@@ -90,6 +90,10 @@ nav {
     margin-left: 100px;
 }
 
+.con1 li {
+    margin-left: 80px;
+}
+
 .container1 {
     width: 55%;
     text-align: center;
@@ -162,6 +166,7 @@ h2{
     text-align: left;
     display: grid;
     grid-template-rows: 1fr auto;
+    margin-top: 150px;
 }
 
 .soo p {
@@ -242,6 +247,10 @@ input {
 }
 
 .inf {
+    font-size: 15px;
+}
+
+li {
     font-size: 15px;
 }
 
