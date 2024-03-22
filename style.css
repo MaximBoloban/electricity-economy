@@ -68,9 +68,8 @@ nav {
     justify-content: space-around;
     background-image: url(things/images/background_gradient.jpg);
     background-size: cover;
-    height: 100%;
     width: 100%;
-    border-bottom: 3px solid purple;
+    border-bottom: 1px solid purple;
 }
 
 .con {
@@ -82,10 +81,13 @@ nav {
 .con1 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
     margin-top: 30px;
     margin-bottom: 30px;
-    margin-left: 150px;
+    margin-left: 50px;
+}
+
+.con1 p {
+    margin-left: 100px;
 }
 
 .container1 {
@@ -128,6 +130,7 @@ nav {
 
 .ph2 {
     text-align: center;
+    margin-top: 70px;
 }
 
 h1 {
@@ -209,16 +212,22 @@ input {
 }
 
 .res {
-    display: flex;
+    margin: 15px;
+    text-align: center;
 }
 
 .calc input[type="number"],
 .calc select {
-    width: 100%;
+    width: 95%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+}
+
+.calc select {
+    margin-top: 10px;
+    margin-left: 15px;
 }
 
 .calc button {
@@ -229,7 +238,7 @@ input {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    margin-top: 20px;
+    margin-top: 23px;
 }
 
 .inf {
@@ -241,5 +250,18 @@ input {
 }
 
 .conim {
-    margin-top: 35px;
+    margin-top: 35px;    
+    position: absolute;
+    right: 150px;
+    
+}
+
+footer {
+    background-color: #5836e5;
+    color: rgb(239, 219, 219);
+    padding: 50px;
+}
+
+.prv {
+    margin: 30px 0 50px 0;
 }
